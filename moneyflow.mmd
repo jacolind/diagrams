@@ -1,0 +1,13 @@
+graph LR
+
+S((Salary))  --> NJL{Bank account}
+
+ICA(Our credit card) --> |1. Expenses| C1[Our costs]
+E(My credit card) --> |1. Expenses| C2[My costs]
+
+NJL -->|2. Pay invoice| ICA
+NJL --> |2. Pay invoice| E
+
+NJL-- "3. Savings increase or decrease" ---A{Brokerage account}
+
+NJL -->|Amortization | B(Bank)
